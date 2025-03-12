@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Mon Site{% endblock %}</title>
+    </head>
+    <body>
+        <header>{% include "home.html" %}</header>
+        <main>        
+            {% block content %}{% endblock %}    
+        </main>
+    </body>
+</html>

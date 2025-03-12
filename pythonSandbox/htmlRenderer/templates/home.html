@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <h1>Bienvenue !</h1>
+    <ul>
+        {% for person in persons %}
+        <li>{{ person | upper}}</li>
+        {% empty %}
+        liste vide !
+        {% endfor %}
+        {% with tutu = titi %}
+        {{ tutu }}
+    </ul>
+</body>
